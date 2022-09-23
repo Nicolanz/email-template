@@ -1,0 +1,935 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+	<!--
+	========
+	Code Crew Email framework
+	# Author : Code Crew
+	# URL : https://codecrew.us/
+	# Version : 1.0.0
+	# Last Modified : 2019.02.04
+	========
+	-->
+	<head>
+		<!--[if gt mso 15]><xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+		</xml><![endif]-->
+		<title>Hayden Los Angeles</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no"/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+		
+		<style type="text/css">
+		/*********************
+		OBLIGATORY EMAIL STYLES
+		*********************/
+		@charset "utf-8";
+		.ReadMsgBody{width:100%;}
+		.ExternalClass{width:100%;}
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+		img{display: block;}
+		body{padding:0; width:100% !important;}
+		
+		/* BYE BYE BLUE LINKS + ORPHAN STYLE */
+		.appleFooter a {color:#999999 !important; text-decoration: none !important;}
+		.appleLink a {color:#ffffff !important; text-decoration: none !important;}
+		.padding_top {padding-top: 95px !important;}
+		#outlook a { padding:0; }
+		body{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+		.ReadMsgBody { width: 100%; }
+		.ExternalClass {width:100%;}
+		.backgroundTable {margin:0 auto; padding:0; width:100% !important;}
+		.ExternalClass * {line-height: 115%;}
+
+		/*********************
+		End Reset
+		*********************/
+
+		/********** CSS Document ***********/
+
+		/*
+		********************
+		Framework - EDIT THIS AND SUFFER THE CONSEQUENCES!
+		********************
+		*/
+		.weight_100 {
+		font-weight: 100;
+		}
+		.weight_200 {
+		font-weight: 200;
+		}
+		.weight_300 {
+		font-weight: 300;
+		}
+		.weight_400 {
+		font-weight: 400;
+		}
+		.weight_500 {
+		font-weight: 500;
+		}
+		.weight_600 {
+		font-weight: 600;
+		}
+		.weight_700 {
+		font-weight: 700;
+		}
+		.weight_800 {
+		font-weight: 800;
+		}
+		.weight_900 {
+		font-weight: 900;
+		}
+		.uppercase {
+		text-transform: uppercase;
+		}
+		.underline {
+		text-decoration: underline;
+		}
+		.italic {
+		font-style: italic;
+		}
+		.block {
+		display: block !important;
+		}
+		.space_class {
+		font-size: 1px;
+		line-height: 1px;
+		}
+		/*
+		********************
+		Almost There, declaring some important things now
+		********************
+		*/
+		body {
+		background-color: #efefef;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 14px;
+		color: #393939;
+		margin: 0 auto;
+		}
+		a {
+		text-decoration: none;
+		}
+		.desktop_hide {
+		max-height: 0px;
+		font-size: 0;
+		display: none;
+		}
+		.space_class_br {
+		font-size: 0px;
+		line-height: 0px;
+		width: 0px;
+		display: block;
+		}
+		.align_justify {
+		text-align: justify;
+			text-align-last: center;
+		}
+		.br_hide {
+		font-size: 0;
+		display: none;
+		max-height: 0px;
+		}
+		.desktop_hide_img {
+		max-height: 0;
+		width: 0;
+		display: none;
+		visibility: hidden;
+		}
+		/*
+		===========================
+		Old wrapper table deprecated. Will use 2 different classes, one for the standard wrapper table
+		and one for the cases where you have a background image. This is done to massively decrease
+		the size of the email file
+		===========================
+		*/
+		.wrapper_table{
+		max-width: 700px;
+		}
+		.wrapper_table_wt_background {
+		background-size: 100% 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		max-width: 800px;
+		}
+		.display_table_cell {
+		display:table-cell !important;
+		}
+		/*
+		===========================
+		Responsive Clases
+		===========================
+		*/
+		
+		@media (max-width: 461px) {
+			/*Global Style*/
+				body.responsive {
+				margin: 0 auto !important;
+				width: 100% !important;
+			}
+			img {
+				height: auto !important;
+				max-width: 100% !important;
+			}
+			img.fullwidth {
+			width: auto !important;
+			max-width: 100% !important;
+			}
+			.desktop_hide {
+				display: block !important;
+				max-width: 100% !important;
+				max-height: 100% !important;
+				}
+				.br_hide {
+				display: block !important;
+				max-width: 100% !important;
+				max-height: 0 !important;
+				}
+		.lt_0 {
+		letter-spacing: 0px !important;
+		}
+		.lt_01 {
+		letter-spacing: -0.02px !important;
+		}
+		.lt_02 {
+		letter-spacing: -0.06px !important;
+		}
+		.lt_03 {
+		letter-spacing: -0.30px !important;
+		}
+		.lt_04 {
+		letter-spacing: -0.38px !important;
+		}
+		.lt_1 {
+		letter-spacing: -0.50px !important;
+		}
+		.lt_2 {
+		letter-spacing: 0.10px !important;
+		}
+		.lt_3 {
+		letter-spacing: 0.14px !important;
+		}
+		.lt_4 {
+		letter-spacing: 0.4px !important;
+		}
+		.lt_5 {
+		letter-spacing: 0.5px !important;
+		}
+		.lt_6 {
+		letter-spacing: 0.03px !important;
+		}
+		.pr_0 {
+		padding-left: 17px !important;
+		}
+
+
+		/*Module Width*/
+		table.wrapper_table {
+			width: 100% !important;
+		background-size:100% 100% !important;
+		}
+		table.wrapper_table .content{
+			width: 100% !important;
+	        height: auto;
+		}
+		table.wrapper_table .se_padding {
+			width: 14px !important;
+		}
+		table.wrapper_table .padding {
+			width: 24px !important;
+		}
+		table.wrapper_table .padding2 {
+			width: 25px !important;
+		}
+		table.wrapper_table .padding3 {
+			width: 27px !important;
+		}
+		table.wrapper_table .padding4 {
+			width: 23px !important;
+		}
+		table.wrapper_table .padding5 {
+			width: 25px !important;
+		}
+		table.wrapper_table .padding6 {
+			width: 34px !important;
+		}
+		table.wrapper_table .padding7 {
+			width: 28px !important;
+		}
+				
+		table.wrapper_table .content_row {
+			/*content == padding + content_row + padding*/
+			width: 290px !important;
+		}
+		table.wrapper_table .content_row_inner {
+			/*content_row == padding + content_row_inner + padding*/
+			width: 260px !important;
+		}
+		/*Position Style*/
+		table.wrapper_table .stacked_fullwidth {
+			width: 100%;
+			display:block !important;
+		}
+		table.wrapper_table .noborder {
+			border: 0 !important;
+		}
+		table.wrapper_table .nomobile {
+			display: none !important;
+		}
+		.nobg_mobile {
+		background-image: none !important;
+		}
+		.mob_justify {
+			text-align: justify;
+				text-align-last: center;
+		}
+
+
+		table.wrapper_table .header_group {
+		display: table-header-group !important;
+		margin-bottom: 20px !important;
+		}
+		table.wrapper_table .footer_group {
+		display: table-footer-group !important;
+		}
+		table.wrapper_table .mob_center {
+		text-align: center !important;
+		margin: 0 auto !important;
+		}
+		table.wrapper_table .mob_left {
+		text-align: left !important;
+		margin: 0 auto !important;
+		}
+		table.mobile_centered_table {
+			margin: 0 auto !important;
+			text-align: center !important;
+		}
+
+
+		
+		/*Height*/
+		table.wrapper_table .height_2 {
+		height: 2px;
+		}
+		table.wrapper_table .height_3 {
+		height: 3px;
+		}
+		table.wrapper_table .height_4 {
+		height: 4px;
+		}
+		table.wrapper_table .height_5 {
+		height: 5px;
+		}
+		table.wrapper_table .height_7 {
+		height: 7px;
+		}
+		table.wrapper_table .height_8 {
+		height: 8px;
+		}
+		table.wrapper_table .height_9 {
+		height: 9px;
+		}
+		table.wrapper_table .height_10 {
+		height: 10px;
+		}
+		table.wrapper_table .height_20 {
+		height: 20px;
+		}
+		table.wrapper_table .height_30 {
+		height: 30px;
+		}
+		table.wrapper_table .height_40 {
+		height: 40px;
+		}
+		table.wrapper_table .height_50 {
+		height: 50px;
+		}
+		table.wrapper_table .height_56 {
+		height: 56px;
+		}
+		table.wrapper_table .height_60 {
+		height: 60px;
+		}
+
+
+			/*Fonts*/
+			table.wrapper_table .mob_paragraph {
+			font-size: 15px !important;
+			}
+			table.wrapper_table .mob_paragraph1{
+			font-size: 20px !important;
+			}
+			table.wrapper_table .mob_paragraph6 {
+			font-size: 16px !important;
+			}
+			/*Line Height*/
+			table.wrapper_table .lh_bigheading3 {
+			line-height: 29px !important;
+			}
+			table.wrapper_table .lh_subheading {
+			line-height: 29px !important;
+			}
+			table.wrapper_table .lh_paragraph1 {
+			line-height: 24px !important;
+			}
+			table.wrapper_table .lh_paragraph2 {
+			line-height: 36px !important;
+			}
+			table.wrapper_table .lh_paragraph3 {
+			line-height: 31px !important;
+			}
+			table.wrapper_table .lh_paragraph5 {
+			line-height: 34px !important;
+			}
+			/*Width*/
+			table.wrapper_table .mob_w6 {
+			width: 6px;
+			}
+			table.wrapper_table .mob_w13 {
+			width: 13.6px;
+			}
+			table.wrapper_table .mob_w18 {
+			width: 18px;
+			}
+			table.wrapper_table .mob_w70 {
+			width: 70px;
+			}
+			table.wrapper_table .mob_w94 {
+			width: 94px;
+			}
+			table.wrapper_table .mob_w230 {
+			width: 230px;
+			}
+			table.wrapper_table .mob_w250 {
+			width: 250px;
+			}
+			table.wrapper_table .mob_w260 {
+			width: 260px;
+			}
+			table.wrapper_table .mob_w275 {
+			width: 275px;
+			}
+			table.wrapper_table .mob_w282 {
+			width: 282px;
+			}
+			table.wrapper_table .mob_w298 {
+			width: 298px;
+			}
+			table.wrapper_table .mob_w306 {
+			width: 306px;
+			}
+			table.wrapper_table .mob_w314 {
+			width: 310px;
+			}
+			table.wrapper_table .mob_w315 {
+			width: 315px;
+			}
+			table.wrapper_table .mob_w317 {
+			width: 317px;
+			}
+			table.wrapper_table .mob_w318 {
+			width: 318px;
+			}
+			table.wrapper_table .mob_w321 {
+			width: 321px;
+			}
+			table.wrapper_table .mob_w322 {
+			width: 322px;
+			}
+		}
+		/* use media query when is needed, to look good on devices */
+
+		/* iphone 5se */
+		@media only screen and (min-width: 320px) and (max-height: 568px) {
+		
+			table.wrapper_table .padding4 {
+				width: 23px !important;
+			}
+			table.wrapper_table .se_font_12 {
+			font-size: 12px !important;
+			}
+			table.wrapper_table .padding3 {
+				width: 20px !important;
+			}
+			table.wrapper_table .no_se {
+				display: none!important;
+			}
+		}
+		
+		/*
+		********************
+		It's safe now, you can start editing.
+		********************
+		*/
+		.roboto_cond {
+			font-family: 'Roboto Condensed', sans-serif;
+		}
+		.merri {
+			font-family: 'Merriweather', serif;
+		}
+		.helv {
+			font-family: 'Helvetica' , sans-serif;
+		}
+		.whitetext {
+			color: #ffffff;
+		}
+		.montserrat {
+			font-family: 'Montserrat', sans-serif;
+		}
+		.blacktext {
+			color: #1a1819;
+		}
+		.redtext {
+			color: #cc4b35;
+		}
+		.yellowbg {
+			background-color: #e4d7c6;
+		}
+		.blackbg {
+			background-color: #1a1819;
+		}
+
+		
+		/*---------// NEW STYLES //-----------*/
+
+		.main-table{
+			width: 400px !important;
+		}
+		.logo-img{
+			width: 80px !important;
+			height: 20px !important;
+		}
+		
+		/* STYLES SCREENS <= 461 */
+		@media (max-width: 461px) {
+			.main-table{
+				width: 185px !important;
+			}
+			.title-img{
+				width: 95% !important;
+			}
+			.title{
+				font-size: 19px !important;
+				letter-spacing: 1px !important;
+			}
+
+			/* HEADER STYLES */
+			.header{
+				height: 600px !important;
+			}
+			.header .logo{
+				height: 60px !important;
+			}
+			.header .content{
+				height: 540px !important;
+			}
+			.header .content .header-content-part1{
+				height: 110px !important;
+			}
+			.header .content .header-content-part2{
+				height: 270px !important;
+				background-size: 120% !important;
+				background-position: start !important;
+			}
+			.header .content .header-content-part2 img{
+                width:75% !important;
+            }
+			.header .content .header-content-part3{
+                height: 160px !important;
+            }
+			.header .content .header-content-part3 p{
+                width: 80% !important;
+                line-height: 16px !important;
+            }
+			/* /HEADER STYLES */
+
+			/* ARTICLE STYLES */
+			.article{
+				height: 1020px !important;
+			}
+
+			.article .article-intro{
+				height: 140px !important;
+			}
+			.article .article-intro p + p, .just-for-outlook{
+				width: 70% !important;
+			}
+
+			.article .article-content{
+				min-height: 750px !important;
+				max-height: auto !important;
+				display: flex !important;
+				flex-direction: column !important;
+				flex-wrap: wrap !important;
+			}
+			.article .article-content .cont1{
+				height: 250px !important;
+				width: 100% !important;
+			}
+			.article .article-content .cont2{
+				height: 250px !important;
+				width: 100% !important;
+			}
+			.article .article-content .cont3{
+				height: 250px !important;
+				width: 100% !important;
+			}
+			.article .article-content table img.product-imgs{
+				width: 70% !important;
+				padding-top: 5px !important;
+			}
+			.article .article-content table p{
+				width: 82% !important;
+				text-align: center !important;
+			}
+			.article .article-content table a{
+				justify-content: center !important;
+			}
+			.article .article-content .buy-now{
+				padding-left: 0px !important;
+			}
+			.article .article-order{
+				height: 130px !important;
+			}
+			/* /ARTICLE STYLES */
+
+
+			/* ASIDE STYLES */
+			.aside{
+				min-height: 240px !important;
+				max-height: 240px !important;
+			}
+			.aside .aside-content{
+				display: flex !important;
+				flex-direction: row !important;
+				flex-wrap: wrap !important;
+				justify-content: center !important;
+			}
+			.aside .aside-content table{
+				width: 45% !important;
+			}
+			/* /ASIDE STYLES */
+
+			/* FOOTER STYLES */
+
+			.footer{
+				height: 85px !important;
+			}
+			.footer p{
+				width: 80%;
+			}
+			/* /FOOTER STYLES */
+
+		}
+	
+
+		</style>
+	
+	</head>
+
+	<body>
+
+		<!-- PREHEADER -->
+		<table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="text-decoration: none; font-size: 0px; line-height: 0px; height:0px; color:#ffffff;">
+					Preheader
+				</td>
+				<td style="display: none; max-height: 0px; overflow: hidden;">
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+					&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+					&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+				</td>
+			</tr>
+		</table>
+		<!-- /PREHEADER -->
+
+		<!-- MAIN TABLE -->
+		<table align="center" class="main-table" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td valign="top" align="center">
+					<!-- ALIGNED TABLE -->
+					<table class="wrapper_table" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout: fixed; max-width: 800px;">
+						<tr>
+							<td class="content" align="center" width="100%" valign="top">
+								<table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+									<!-- HEADER -->
+									<tr>
+										<td height="743" class="header" style="background-image: url('images/background-sun.png'); background-repeat: no-repeat; background-size: cover; background-position: center" >
+
+											<!--LOGO -->
+											<table cellpadding="0" cellspacing="0" border="0" width="100%">
+												<tr>
+													<td class="logo" height="53" align="center"  >
+														<a target="_blank" href="https://ws.haydenla.com/" border="0" style="display:flex; justify-content:center; padding-top: 20px;">
+															<img src="images/logo.png" class="logo-img" alt="HAYDEN - LOS ANGELES">
+														</a>
+													</td>
+												</tr>
+											</table>
+											<!--/LOGO -->
+
+											<!-- CONTENT -->
+											<table cellpadding="0" cellspacing="0" border="0" width="100%">
+												<tr>
+													<td class="content" height="690">
+														<table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+															<tr>
+																<td class="header-content-part1" height="130" align="center" style=" 
+																display: flex;
+																flex-direction: column;
+																justify-content: end;
+																align-items: center;">
+																	<b class="title" style="color: black; font-family: 'Open Sans'; font-size: 25px;">Have You Seen</b>
+																	<img style="width: 70%; padding-bottom: 5px;" class="title-img" src="images/title.png" alt="New Styles">
+
+																</td>
+															</tr>
+
+															<tr>
+																<td class="header-content-part2" height="410" style="background: url('images/background1.png') no-repeat; background-size: 110%; background-position: 50% 70%;" align="center">
+																	<img style="
+																	border-radius: 2px;
+																	padding: 10px;
+																	background: #f3f3f3;;
+																	box-shadow: 0 8px 5px rgba(36, 36, 36, 0.05);
+																	" src="images/cover.png" width="50%" height="350" alt="Trendy clothes">
+																</td>
+															</tr>
+															<tr>
+																<td class="header-content-part3" align="center" height="150" width="100%" style="display: flex; flex-direction: column; align-items: center;">
+                                                                    <p style="font-family: 'PT Sans'; font-size: 10px; line-height: 18px; width: 57%;">
+                                                                        Hey [FNAME/there], we notice you haven't ordered in a while. We have
+                                                                        some new looks we think your customers will love
+                                                                    </p>
+																	<a target="_blank" href="https://ws.haydenla.com/collections/new">
+																		<button type="submit" style="padding: 9px 19px; font-family: 'PT Sans'; font-size: 7px; background: #020202; color: #fff; border: none; margin-top: 10px; letter-spacing: 1px">
+																			SHOP NEW RELEASES
+																		</button>
+																	</a>
+                                                                </td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+											<!-- /CONTENT -->
+										</td>
+									</tr>
+									<!-- /HEADER -->
+
+									<!-- ARTICLE -->
+									<tr>
+										<td height="500" class="article" style="padding: 0; margin: 0" bgcolor="#fff">
+											<table cellpadding="0" cellspacing="0" border="0" width="100%">
+												<tr>
+													<td height="140" class="article-intro" align="center">
+														<p style="font-weight:bold; font-family: 'Open Sans'; font-size: 18px; margin-top: 35px;">
+															Create Your Next <br>
+															<span style="font-weight: normal;">Winning Collection</span>
+														</p>
+														<p class="just-for-outlook" style="font-family: 'PT Sans'; font-size: 9px; width: 40%; font-weight:500; line-height: 14px;" >
+															Turn browsers into buyers with these popular new styles
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td class="article-content" style="
+														min-height: 250px;
+														max-height: auto;
+														display: flex; flex-direction:
+														row; flex-wrap: nowrap;
+														justify-content: center;
+														font-family: 'PT Sans';
+														">
+														<table class="cont1" height="250" width="31%" style="max-height: auto;" cellpadding="0" cellspacing="0" border="0">
+															<tr>
+																<td height="180" align="center">
+																	<img class="product-imgs" width="90%" src="images/shop1.png" alt="First product">
+																</td>
+															</tr>
+															<tr >
+																<td height="25" align="center">
+																	<p style="text-transform: capitalize; text-align: start; width: 82%; font-size: 8.5px; color: #665e56;">
+																		Girls button down peplum western tencel shirt (GY2570 light Denim pack)
+																	</p>
+																</td>
+															</tr>
+															<tr >
+																<td height="15">
+																	<a class="buy-now" href="https://ws.haydenla.com/collections/girls-bottoms" target="_blank" style="font-size: 'PT Sans'; font-size:7px; display: flex; flex-direction: row; align-items: center; color: black; font-weight: bold; padding-left: 10px; margin-bottom: 7px;letter-spacing: .8px">
+																		BUY NOW<img style="padding-left: 4px;" width="4" height="4" src="images/polygon.png" alt="right arrow">
+																	</a> 
+																</td>
+															</tr>
+														</table>
+														<table class="cont2" height="250" width="31%" style="max-height: auto;" cellpadding="0" cellspacing="0" border="0">
+															<tr>
+																<td height="180" align="center">
+																	<img class="product-imgs" width="90%" src="images/shop2.png" alt="Second product">
+																</td>
+															</tr>
+															<tr >
+																<td height="35" align="center">
+																	<p style="text-transform: capitalize; text-align: start; width: 82%; font-size: 8.5px; color: #665e56;">
+																		Plus floral print V neck smock waist tiered mini dress
+																	</p>
+																</td>
+															</tr>
+															<tr >
+																<td height="15">
+																	<a class="buy-now" href="https://ws.haydenla.com/collections/dresses" target="_blank" style="font-size: 'PT Sans'; font-size:7px; display: flex; flex-direction: row; align-items: center; color: black; font-weight: bold; padding-left: 10px; margin-bottom: 7px; letter-spacing: .8px">
+																		BUY NOW<img style="padding-left: 4px;" width="4" height="4" src="images/polygon.png" alt="right arrow">
+																	</a> 
+																</td>
+															</tr>
+														</table>
+														<table class="cont3" height="250" width="31%" style="max-height: auto;" cellpadding="0" cellspacing="0" border="0">
+															<tr>
+																<td height="180" align="center">
+																	<img class="product-imgs" width="90%" src="images/shop3.png" alt="Third product">
+																</td>
+															</tr>
+															<tr >
+																<td height="35" align="center">
+																	<p style="text-transform: capitalize; text-align: start; width: 82%; font-size: 8.5px; color: #665e56;">
+																		Womens Floral Tierred Mini And Beauty Skirt (HY2242 Black Pack)
+																	</p>
+																</td>
+															</tr>
+															<tr >
+																<td height="15">
+																	<a class="buy-now" href="https://ws.haydenla.com/collections/activewear-1" target="_blank" style="font-size: 'PT Sans'; font-size:7px; display: flex; flex-direction: row; align-items: center; color: black; font-weight: bold; padding-left: 10px; margin-bottom: 7px; letter-spacing: .8px">
+																		BUY NOW<img style="padding-left: 4px;" width="4" height="4" src="images/polygon.png" alt="right arrow">
+																	</a> 
+																</td>
+															</tr>
+														</table>
+														
+													</td>
+												</tr>
+												<tr>
+													<td class="article-order" height="110" align="center">
+														<p class="just-for-outlook" style="font-family: 'PT Sans'; font-size: 9px; width: 47%; font-weight:500; line-height: 14px;" align="center" >
+															You know your customers best, so you can order 1 pack per syle to test the waters or go all-in
+															with a large order, it's up to you
+														</p>
+														<a target="_blank" href="https://ws.haydenla.com/collections/all">
+															<button type="submit" style="padding: 9px 19px; font-family: 'PT Sans'; font-size: 7px; background: #020202; color: #fff; border: none; margin-top: 10px; letter-spacing: 1px">
+																ORDER NOW
+															</button>
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- /ARTICLE -->
+
+									<!-- ASIDE -->
+									<tr>
+										<td height="170" class="aside" style="display: flex; flex-direction: column; justify-content: space-between;" bgcolor="#fff">
+											<!--LOGO -->
+											<table cellpadding="0" cellspacing="0" border="0" width="100%">
+												<tr>
+													<td class="logo" height="53" style="padding-top: 20px;" align="center"  >
+														<a href="https://ws.haydenla.com/" border="0" style="display:flex; justify-content:center;">
+															<img src="images/logo.png" class="logo-img" alt="HAYDEN - LOS ANGELES">
+														</a>
+													</td>
+												</tr>
+											</table>
+											<!--/LOGO -->
+											<table cellpadding="0" cellspacing="0" border="0" width="100%">
+												<tr>
+													<td class="aside-content" align="center" style="
+														min-height: 90px;
+														max-height: auto;
+														display: flex;
+														overflow-wrap: normal ;
+														flex-direction: row;
+														flex-wrap: nowrap;
+														justify-content: center;
+														">
+														<table cellpadding="0" cellspacing="0" width="20%">
+															<tr>
+																<td >
+																	<img style="width: 100;" height="85" src="images/shop7.png" alt="Model">
+																</td>
+															</tr>
+														</table>
+														<table cellpadding="0" cellspacing="0" width="20%">
+															<tr>
+																<td >
+																	<img style="width: 100;" height="85" src="images/shop6.png" alt="Model">
+																</td>
+															</tr>
+														</table>
+														<table cellpadding="0" cellspacing="0" width="20%">
+															<tr>
+																<td >
+																	<img style="width: 100;" height="85" src="images/shop5.png" alt="Model">
+																</td>
+															</tr>
+														</table>
+														<table cellpadding="0" cellspacing="0" width="20%">
+															<tr>
+																<td >
+																	<img style="width: 100;" height="85" src="images/shop4.png" alt="Model">
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- /ASIDE -->
+
+									<!-- FOOTER -->
+									<tr>
+										<td height="55" class="footer" align="center" bgcolor="#fff">
+											<div style="font-family: 'PT Sans'; font-size: 8px; font-weight: 450;">
+												<span ><a style="color: #020202; padding: 0px 10px;" target="_blank" href="https://ws.haydenla.com/collections/whats-new-s-s-2021">EXCLUSIVES</a>|</span>
+												<span ><a style="color: #020202; padding: 0px 10px;" target="_blank" href="https://ws.haydenla.com/collections/sale-1">SALE</a>|</span>
+												<span ><a style="color: #020202; padding: 0px 10px;" target="_blank" href="https://ws.haydenla.com/pages/our-story">ABOUT US</a>|</span>
+												<span ><a style="color: #020202; padding: 0px 10px;" target="_blank" href="https://ws.haydenla.com/pages/contact-us">CONTACT US</a>|</span>
+												<span ><a style="color: #020202; padding: 0px 10px;" target="_blank" href="https://customers.haydenla.com/scs/checkout.ssp?is=login&login=T#login-register">UNSUBSCRIBE</a></span>
+											</div>
+											<p style="font-family: 'PT Sans'; color: #979c9f; font-size: 7px; letter-spacing: 0.7px;">Copyright © 2021 Hayden Los Angeles - All rights reserved</p>
+										</td>
+									</tr>
+									<!-- /FOOTER -->
+
+								</table>
+							</td>
+						</tr>
+					</table>
+					<!-- /ALIGNED TABLE -->
+				</td>
+			</tr>
+		</table>
+		<!-- /MAIN TABLE -->
+	</body>
+</html>
